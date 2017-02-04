@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>K-means</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="static/stylesheets/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+				<h3 class="text-muted"><center>Welcome {{username}}</center></h3>
+				<h3 class="text-muted"><center>StudentID 5978</center></h3>
+			</div>
+			
+			<div>
+				<form action="logout" method="post">
+					<center>
+						<input type="submit" value="logout">
+					</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div>			
+				<form action="barchart" method="post" enctype="multipart/form-data">
+					<center>
+						Column 1 : 
+						<input type="text" name="c1">
+						<br><br>
+						Column 2 : 
+						<input type="text" name="c2">
+						<br><br>
+						File : 
+						<input type="file" name="file">
+						<br><br>
+						<input type="submit" value="Upload">
+					</center>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>

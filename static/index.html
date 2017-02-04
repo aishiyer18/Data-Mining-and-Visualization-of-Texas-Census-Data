@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Python Flask Login Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>User Login: {{id}}</center></h3>
+      </div>
+	        
+	  <div>      
+      <form name="login" action="welcome" method="post" enctype="multipart/form-data">
+        <center><input type="text" name="username">
+		<center><input type="password" name="password">
+        <input type="submit" value="Login"></center>
+      </form>
+      </div>
+	  
+	  <hr>	  
+    </div>
+	
+	<div class="container">
+      <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>Enter two lables and value for k</center></h3>
+      </div>
+	        
+	  <div>      
+      <form name="plotter" action="plotter" method="post" enctype="multipart/form-data">
+        <center><input type="text" name="a">
+		<center><input type="text" name="b">
+		<center><input type="text" name="k">
+        <input type="submit" value="SUBMIT"></center>
+      </form>
+      </div>
+	  
+	  <hr>	  
+    </div>
+	
+	<div class="container">
+      <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>Enter X and Y.. Normal scatter plot</center></h3>
+      </div>
+	        
+	  <div>      
+      <form name="scatter" action="scatter" method="post" enctype="multipart/form-data">
+        <center><input type="text" name="a">
+		<center><input type="text" name="b">
+        <input type="submit" value="SUBMIT"></center>
+      </form>
+      </div>
+	  
+	  <hr>	  
+    </div>
+	
+	
+  </body>
+
+</html>
+
